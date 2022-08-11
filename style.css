@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+
+*{
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+:root{
+    --c-brand: #f83691;
+    --c-brand-rgb: 248,84,.44,1;
+    --c-dark: #303050;
+    --c-body: #636383;
+    --transition: all .6s ease;
+    --shadow: 0px 15px 40px rgba(0,0,0,0.1);
+}
+
+body {
+    font-family: var(--f-main);
+    color: var(--c-body);
+    line-height: 1.7;
+}
+
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6 {
+    font-weight: 700;
+    color: var(--c-dark);
+}
+
+a {
+    text-decoration: none;
+    color: var(--c-dark);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--c-brand);
+}
+
+img {
+    width: 100%;
+}
+
+.pink-text{
+    color: var(--c-brand);
+}
+
+.pink-btn{
+    border: 2px solid #f83691;
+    padding: 10px 18px;
+    background-color: #f83691;
+    color: white;
+    border-radius: 10px;
+}
+
+.pink-btn:hover{
+    background-color: white;
+    color: #f83691;
+}
+
+.section-padding {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+/* header css  */
+
+#home{
+    background-image: url(images/hero.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.logo-text{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #f83691;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--c-dark);
+    transition: var(--transition);
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    color: var(--c-brand);
+}
+
+.social-icon i{
+    margin: 0px 5px;
+    height: 30px;
+    width: 30px;
+    color: white;
+background-color: var(--c-brand);
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 5px;
+transition: var(--transition);
+}
+
+.social-icon i:hover{
+    background-color: white;
+    color: var(--c-brand);
+    border: 2px solid #f83691;
+}
+
+.mama{
+    margin-top: 20px;
+}
+
+/* section start here  */
+.line{
+    height: 4px;
+    width: 100px;
+    background-color: var(--c-brand);
+    display: block;
+    margin:20px
+     auto;
+}
+
+.section-logo{
+    background-color: var(--c-brand);
+    height: 80px;
+    width: 80px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.service-icon{
+    border: 2px solid #f83691;
+    padding: 4px 8px;
+    border-radius: 50%;
+    color: white;
+    background-color: var(--c-brand);
+    box-sizing: border-box;
+    transition: var(--transition);
+}
+
+.service-a{
+    font-weight: 500;
+}
+
+.service-icon:hover{
+    margin-left: 10px;
+}
+
+/* work css here  */
+
+.work{
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+.work .work-btn{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--c-brand);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.work img, .work-btn{
+    transition: var(--transition);
+    
+}
+
+.work:hover .work-btn{
+    top: 0;
+}
+
+.work:hover img{
+    transform: translateY(-100%);
+}
+
+
+/* resume css here  */
+.resume{
+    position: relative;
+}
+
+.resume::before{
+    content: "";
+    height: 100%;
+    width: 2px;
+    background-color: var(--c-brand);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.resume::after{
+    content: "";
+    height: 14px;
+    width: 14px;
+    background-color: var(--c-brand);
+    position: absolute;
+    top: 0;
+    left: -7px;
+    border-radius: 50%;
+}
+
+/* contact start here  */
+form .form-control{
+    
+}
+
+form .form-control:focus{
+    border-width: 1.5px;
+box-shadow: none;
+    border-color: var(--c-brand);
+}
+
+/* footer start here  */
+.footer-color{
+    background-color: var(--c-dark);
+}
+
+.footer-sub{
+    color: white;
+}
